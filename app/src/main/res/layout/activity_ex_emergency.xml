@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".ExEmergency">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing Emergencies"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:id="@+id/tvex"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_below="@+id/tvex"
+        android:id="@+id/tvem2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_below="@+id/tvem2"
+        android:id="@+id/tvem3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_below="@+id/tvem3"
+        android:id="@+id/tvem4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_below="@+id/tvem4"
+        android:id="@+id/tvem5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_below="@+id/tvem5"
+        android:id="@+id/tvem6"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvem6"
+        android:layout_marginTop="300dp"
+        android:id="@+id/btnem"
+        android:text="Back"
+        android:backgroundTint="#aeada4"
+        android:background="@drawable/border"
+        />
+
+</RelativeLayout>

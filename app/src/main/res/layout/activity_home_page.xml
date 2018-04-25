@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".HomePage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/te1"
+        android:textColor="#ffff"
+        />
+
+
+    <Button
+        android:id="@+id/bb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patients"
+        android:textSize="25sp"
+        android:onClick="patients"
+        android:layout_below="@+id/te1"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        />
+
+    <Button
+        android:id="@+id/bb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctors"
+        android:textSize="25sp"
+        android:onClick="doctors"
+        android:layout_below="@+id/bb1"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button"
+        />
+    <Button
+        android:id="@+id/bb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pharmacy"
+        android:textSize="25sp"
+        android:onClick="pharmacy"
+        android:layout_below="@+id/bb2"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button"
+        />
+    <Button
+        android:id="@+id/bb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency"
+        android:textSize="25sp"
+        android:onClick="emerg"
+        android:layout_below="@+id/bb3"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button"
+        />
+
+</RelativeLayout>

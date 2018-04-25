@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#ffff"
+        android:textSize="75dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName:"
+        android:textSize="25dp"
+        android:layout_marginTop="150dp"
+        android:id="@+id/un"
+        android:textColor="#ffff"
+        />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/un"
+        android:textColor="#ffff"
+        android:hint="MADPro"
+        android:background="@drawable/border"
+        android:layout_marginTop="160dp"
+        android:id="@+id/eun"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Password:"
+        android:layout_below="@+id/un"
+        android:textSize="25dp"
+        android:textColor="#ffff"
+        android:id="@+id/pw"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="242dp"
+        android:textColor="#ffff"
+        android:hint="123456"
+        android:inputType="textPassword"
+        android:background="@drawable/border"
+        android:layout_toRightOf="@+id/pw"
+        android:id="@+id/epw"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pw"
+        android:layout_marginTop="70dp"
+        android:onClick="signin"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:id="@+id/bsi"/>
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Patient">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        android:text="Patient Details"
+        android:background="#9b9696"
+        />
+    <TextView
+        android:layout_below="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="20dp"
+        android:id="@+id/ntv"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"   />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ntv"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_below="@id/head"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edt1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:id="@+id/desc"
+        android:layout_below="@+id/ntv"
+        android:layout_marginTop="25dp"   />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:layout_toRightOf="@+id/desc"
+        android:layout_below="@id/edt1"
+        android:textSize="20dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edt2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:textSize="20dp"
+
+        android:textColor="#ffff"
+        android:id="@+id/atv"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="8dp"   />
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/atv"
+        android:textSize="15dp"
+        android:textColor="#ffff"
+        android:inputType="number"
+        android:layout_below="@id/edt2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:id="@+id/edt3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group:"
+        android:textSize="20dp"
+
+        android:textColor="#ffff"
+        android:layout_below="@+id/atv"
+        android:id="@+id/btv"
+        android:layout_marginTop="15dp"   />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt3"
+        android:layout_toRightOf="@id/btv"
+        android:layout_marginTop="20dp"
+        android:background="#ffff"
+        android:popupBackground="#ffff"
+        android:id="@+id/spin"
+        >
+
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact:"
+
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:id="@+id/ctv"
+        android:layout_below="@id/btv"
+        android:layout_marginTop="15dp"   />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ctv"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:inputType="phone"
+        android:layout_below="@id/spin"
+        android:background="@drawable/border"
+        android:layout_marginTop="15dp"
+
+        android:id="@+id/edt4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contact:"
+        android:textSize="20dp"
+
+        android:textColor="#ffff"
+        android:id="@+id/etv"
+        android:layout_below="@id/ctv"
+        android:layout_marginTop="15dp"   />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etv"
+        android:textSize="15dp"
+        android:textColor="#ffff"
+        android:inputType="phone"
+        android:layout_below="@id/edt4"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+
+        android:id="@+id/edt5"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room number:"
+        android:textSize="20dp"
+
+        android:textColor="#ffff"
+        android:id="@+id/rtv"
+        android:layout_below="@id/etv"
+        android:layout_marginTop="15dp"   />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt5"
+        android:layout_toRightOf="@id/rtv"
+        android:layout_marginTop="20dp"
+        
+        android:id="@+id/spin2"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name:"
+        android:textSize="20dp"
+
+        android:textColor="#ffff"
+        android:id="@+id/dtv"
+        android:layout_below="@id/rtv"
+        android:layout_marginTop="15dp"   />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dtv"
+        android:textSize="20dp"
+        android:background="@drawable/border"
+        android:inputType="phone"
+        android:layout_below="@id/spin2"
+        android:layout_marginTop="15dp"
+
+        android:id="@+id/edt6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specialization:"
+        android:textSize="20dp"
+
+        android:textColor="#ffff"
+        android:id="@+id/stv"
+        android:layout_below="@id/dtv"
+        android:layout_marginTop="15dp"   />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt6"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/stv"></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scans/Tests Prescribed?:"
+
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:id="@+id/ptv"
+        android:layout_below="@id/stv"
+        android:layout_marginTop="15dp"   />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ptv"
+        android:id="@+id/radio"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+
+            android:textColor="#ffff"
+            android:id="@+id/yes"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+
+            android:textColor="#ffff"
+            android:id="@+id/no"
+            />
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:id="@+id/submit_area"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:layout_toRightOf="@id/submit_area"
+        android:layout_marginLeft="15dp"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:id="@+id/cancel_action"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MedicineDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicine Details"
+        android:textColor="#ffff"
+        android:gravity="center_horizontal"
+        android:textSize="40dp"
+        android:id="@+id/tv1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="No.of Stock"
+        android:textColor="#ffff"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:id="@+id/tv2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:layout_toRightOf="@id/tv2"
+        android:id="@+id/ed1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:text="Expiry Date"
+        android:textColor="#ffff"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:id="@+id/tv3"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed1"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:layout_toRightOf="@id/tv3"
+        android:id="@+id/ed2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:text="Name of Medicine"
+        android:textSize="30dp"
+        android:textColor="#ffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv4"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed2"
+        android:textColor="#ffff"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/border"
+        android:layout_toRightOf="@id/tv4"
+        android:id="@+id/ed3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="300dp"
+        android:onClick="sub"
+        android:text="Submit"/>
+
+</RelativeLayout>

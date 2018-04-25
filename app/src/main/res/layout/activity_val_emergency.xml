@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ValEmergency">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency"
+        android:textSize="50dp"
+        android:textColor="#ffff"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Add Emergency"
+        android:textAllCaps="false"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:id="@+id/addem"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@id/addem"
+        android:id="@+id/existem"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="Existing emergencies"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/existem"
+        android:text="EXIT"
+        android:id="@+id/exitem"
+
+        android:background="@drawable/button"/>
+</RelativeLayout>
